@@ -1,0 +1,90 @@
+\documentclass[10pt,a4paper]{elsarticle}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+%\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{mathtools,amssymb}
+\usepackage{subfigure}
+\usepackage{optidef}
+\usepackage{xcolor}
+\usepackage{amsthm}
+\usepackage{comment}
+\usepackage[ruled]{algorithm2e}
+\usepackage{xspace}
+\usepackage{ulem}
+\usepackage{multirow}
+\usepackage{url}
+\newtheorem*{remark}{Remark}
+
+\usepackage[margin=1in]{geometry}
+
+\def\MDR{{\sf MDRPG\xspace}}
+\def\AMD{{\sf AMDRPG\xspace}}
+\def\NMD{{\sf NMDRPG\xspace}}
+\def\PMD{{\sf PMDRPG\xspace}}
+\definecolor{armygreen}{rgb}{0.19, 0.53, 0.43}
+\definecolor{atomictangerine}{rgb}{1.0, 0.6, 0.4}
+\newcommand{\JP}[1]{{\color{armygreen}#1}}
+\newcommand{\CV}[1]{{\color{atomictangerine}#1}}
+\newcommand{\LA}[1]{{\color{red}#1}}
+\renewcommand{\arraystretch}{1.5}
+
+
+
+\begin{document}
+
+\begin{frontmatter}
+
+\title{Coordinating drones with mothership vehicles: The mothership and drone routing problem with Graphs}
+
+\author[1]{Lavinia Amorosi\corref{cor1}}
+\ead{lavinia.amorosi@uniroma1.it}
+\author[2]{Justo Puerto\corref{cor1}}
+\ead{puerto@us.es}
+\author[3]{Carlos Valverde\corref{cor1}}
+\ead{cvalverde@us.es}
+
+\address[1]{Department of Statistics, Sapienza, University of Rome, Rome, 00185, Italy}
+\address[2]{Department of Statistics and Operations Research, University of Seville, Seville, 41012, Spain}
+\address[3]{Department of Statistics and Operations Research, University of Seville, Seville, 41012, Spain}
+
+\cortext[cor1]{Equally contributing authors}
+
+\date{\today}
+
+\begin{abstract}
+This paper addresses the optimization of routing problems with drones. It analyzes the coordination of one mothership with one drone to obtain optimal routes that have to visit some target objects modeled as general graphs. The goal is to minimize the overall weighted distance traveled by both vehicles while satisfying the requirements in terms of percentages of visits to targets. We discuss different approaches depending on the assumption made on the route followed by the mothership: i) the mothership can move on a continuous framework (the Euclidean plane), ii) on a connected piecewise linear polygonal chain or iii) on a general graph. In all cases, we develop exact formulations resorting to mixed integer second order cone programs that are compared on a testbed of instances to asses their performance. The high complexity of the exact methods makes it difficult to find optimal solutions in short computing time. For that reason, besides the exact formulations we also provide a tailored matheuristic algorithm that allows one to obtain high quality solutions in reasonable time. Computational experiments show the usefulness of our methods in different scenarios. 
+\end{abstract}
+
+\begin{keyword}
+Arc Routing Problems \sep Networks \sep Drones \sep Conic Programming
+\end{keyword}
+
+\end{frontmatter}
+
+\input{introduction_revised}
+\input{description_revised}
+\input{literature}
+\input{formulations_revised}
+\input{bounds_revised}
+\input{heuristic_revised}
+% \input{Benders-like}
+\input{experiments}
+% \input{extensions}
+\section*{Acknowledgements}
+\noindent
+This research has been partially supported by Spanish Ministry of Education and Science/FEDER grant number  MTM2016-74983-C02-(01-02), projects FEDER-US-1256951, CEI-3-FQM331 and  \textit{NetmeetData}: Ayudas Fundaci\'on BBVA a equipos de investigaci\'on cient\'ifica 2019, and by University of Rome, Sapienza grant number: RM11916B7F962975.
+%\section{Introduction}
+
+% \bibliographystyle{apa}
+
+\bibliographystyle{apalike}
+% \printbibliography
+\section*{References}
+\bibliography{bibliography2}
+
+
+\end{document}

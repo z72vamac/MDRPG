@@ -1,0 +1,327 @@
+%\usepackage[display]{texpower}
+
+% CHANGED: Added
+\documentclass[slidestop,usepdftitle=false, xcolor=table]{beamer}
+\usepackage[accumulated]{beamerseminar}
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{beamertexpower}
+\usepackage{multicol}
+\usepackage{beamerthemeshadow}
+\usepackage{graphics}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{animate}
+\usepackage{subfigure}
+\usepackage{movie15}
+\usepackage{bibentry}
+\usepackage{epstopdf}
+\usepackage{lmodern}
+%\usepackage{enumerate}
+\usepackage{amssymb,amsmath,graphicx,tikz,movie15}
+\usepackage[linesnumbered,lined,boxed,commentsnumbered,ruled]{algorithm2e}
+\usepackage{hyperref}
+\usepackage[mathscr]{eucal}
+\usepackage{optidef}
+\setbeamertemplate{theorems}[numbered]
+\setbeamercolor{frametitle}{bg=black}
+
+\usetheme{Antibes}
+
+\definecolor{studentbrown}{RGB}{124,71,50}
+
+\newtheorem{act}{Actividad}
+
+\newtheorem{ej}{Ejemplo}[section]
+% Theorem %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\BeforeBeginEnvironment{ej}{
+	\setbeamercolor{block title}{use=example text,fg=white,bg=example text.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title example,bg=block title example.bg!10!bg}
+}
+\AfterEndEnvironment{ej}{
+	\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+}
+
+% Proposition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{obs}{Observación}[section]
+\BeforeBeginEnvironment{obs}{
+	\setbeamercolor{block title}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+}
+\AfterEndEnvironment{obs}{
+	\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+}
+
+% Definition %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{defi}{Definición}[section]
+\BeforeBeginEnvironment{defi}{
+	\setbeamercolor{block title}{use=alerted text,fg=white,bg=alerted text.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title alerted,bg=block title alerted.bg!10!bg}
+}
+\AfterEndEnvironment{defi}{
+	\setbeamercolor{block title}{use=structure,fg=white,bg=structure.fg!75!black}
+	\setbeamercolor{block body}{parent=normal text,use=block title,bg=block title.bg!10!bg}
+}
+
+%%%%%%%%%%%%%%%%%
+\definecolor{31}{rgb}{.3,.5,.2}
+\definecolor{13}{rgb}{.1,.6,.3}
+% CHANGED: Moved \title and \author outside of slide
+\title[Problemas de coordinación de drones con otros vehículos]{Problemas de coordinación de drones con otros vehículos}
+\author{Lavinia Amorosi, Justo Puerto y Carlos Valverde}
+%\newline
+\institute{\begin{center}
+		\date{2020/2021}
+		\text{Instituto de Matemáticas de la Universidad de Sevilla}
+	\end{center}
+	% \begin{center}
+	% 	\textcolor{blue}{Lavinia Amorosi, Justo Puerto y Carlos Valverde}
+	% \end{center}
+	\begin{center}
+		\includegraphics[width=0.3\linewidth]{Logo_IMUS}
+	\end{center}
+
+}
+
+\begin{document}
+
+	\begin{frame}
+		\titlepage
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Indice de contenidos}
+		\begin{itemize}
+			\item Introducción
+			\item Revisión de la literatura
+			\item Descripción de los problemas
+			\item Nuevos horizontes
+		\end{itemize}
+	\end{frame}
+
+	\setbeamerfont{frametitle}{size=\large}
+	\section{Introducción}
+	\begin{frame}
+		\begin{center}
+			\includegraphics[width=0.85\linewidth]{map_mathematics}
+		\end{center}
+		PD: Gracias a LA REME por su poder inspirador.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Uso de los drones}
+		Se está empleando en multitud de campos (Otto, 2018):
+		\begin{itemize}
+			\item \textbf{Telecomunicaciones}, proporcionando conectividad a la red en áreas rurales.
+			\pause
+			\item \textbf{Catástrofes naturales}, cuando la infraestructura del lugar está afectada.
+			\pause
+			\item \textbf{Actividades de inspección}.
+			\pause
+			\item \textbf{Reparto de bienes}.
+			\begin{center}
+				\includegraphics[width=0.55\linewidth]{imagen_dron}
+			\end{center}
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Ventajas con respecto a transportes tradicionales}
+		\begin{itemize}
+			\item Costes de transporte menores.
+			\pause
+			\item Tecnología más limpia.
+			\pause
+			\item Reemplaza la actividad humana en algunas actividades de riesgo.
+			\pause
+			\item Accesibilidad a cualquier zona. (\url{https://www.youtube.com/watch?v=e7x-Z54ipug})
+			\item \textbf{Libertad de movimiento}.
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.55\linewidth]{dron_inspeccion}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Inconveniente con respecto a transportes tradicionales}
+		El mayor inconveniente que presenta esta tecnología es la \textbf{falta de autonomía} para completar un servicio, inconveniente que se resuelve coordinando drones con naves tradicionales que hacen de soporte.
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{dron_camion}
+		\end{center}
+	\end{frame}
+
+	\section{Revisión de la literatura}
+	\begin{frame}
+		\frametitle{Un nuevo campo en el diseño de rutas}
+		\begin{itemize}
+		\item La mayoría de los problemas clásicos de rutas que se han estudiado, se resuelven sobre grafos. Por ejemplo, el clásico Traveling Salesman Problem:
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{TSP}
+		\end{center}
+		\pause
+		\item Sin embargo, como los drones se pueden mover \textit{libremente} por el espacio, se tiene la libertad de que puede realizar cualquier trayectoria, abriendo una nueva línea de investigación en el diseño de rutas.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Punto de partida de nuestro trabajo}
+		En 2018, Stefan Poikonen y Bruce Golden definieron (aunque no formularon explícitamente) The Mothership and Drone Routing Problem (MDRP):
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{poikonen_2}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Punto de partida de nuestro trabajo}
+		En 2018, Stefan Poikonen y Bruce Golden definieron (aunque no formularon explícitamente) The Mothership and Drone Routing Problem (MDRP):
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{poikonen_1}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\textbf{Observación:} Nuestros modelos tienen más apellidos que La duquesa de Alba de Tormes:
+		\begin{center}
+			\includegraphics[width=0.4\linewidth]{duquesa2}\includegraphics[width=0.4\linewidth]{apellidos_duquesa}
+		\end{center}
+	\end{frame}
+
+	\section{Descripción del problema}
+	\begin{frame}
+		\frametitle{Extensiones del MDRP}
+		¿Cómo podemos extender este problema en cuanto al movimiento del dron?
+		\begin{enumerate}
+			\item Formulamos explícitamente el problema.
+			\pause
+			\item Cambiamos los objetivos a visitar de puntos a poligonales que se tenían que atravesar en un porcentaje.
+			\pause
+			\item Cambiamos los objetivos a visitar de poligonales a grafos visitando cada arista a lo sumo una vez y recorriéndolos \ldots
+			\begin{itemize}
+				\item en un porcentaje de su longitud total.
+				\item en un porcentaje de la longitud de cada una de sus aristas.
+			\end{itemize}
+		\end{enumerate}
+		A esto lo hemos llamado \textbf{The All-Terrain Mothership and Drone Routing Problem with Graphs} (AMDRPG). Este problema puede simular el movimiento de un dron en coordinación con un medio aéreo o un medio marítimo.
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Datos iniciales}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{PDMTZ_1}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Recorrido un porcentaje (50\%) de la longitud de cada arista del grafo}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{PDMTZ_e}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Recorrido un porcentaje (50\%) de la longitud total del grafo}
+		\begin{center}
+			\includegraphics[width=0.8\linewidth]{PDMTZ_g}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Limitación del AMDRPG}
+		La principal limitación que tiene este problema es el hecho de que los puntos de lanzamiento y recogida están localizados libremente, algo que no es realista con el movimiento de un vehículo.
+		\begin{small}
+		\begin{enumerate}
+			\item Cambiamos el caso en el que la nave nodriza se movía libremente a aquel en el que se mueve sobre una poligonal cerrada, lo que hemos denominado como \textbf{The Network Mothership-Drone Routing Problem on a Polygonal with Graphs} (PMDRPG). (El primo hermano de la Duquesa)
+			\begin{center}
+				\includegraphics[width=0.5\linewidth]{TDMTZ}
+			\end{center}
+		\end{enumerate}
+	\end{small}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Limitación del AMDRPG}
+		La principal limitación que tiene este problema es el hecho de que los puntos de lanzamiento y recogida están localizados libremente, algo que no es realista con el movimiento de un vehículo.
+		\begin{small}
+			\begin{enumerate}
+				\setcounter{enumi}{1}
+				\item Dimos un paso más allá, presentando una formulación en la que el camión se mueve sobre un grafo, cuyo nombre es \textbf{The Network Mothership-Drone Routing Problem with Graphs} (NMDRPG). (La hermana del primo de la Duquesa)
+				\begin{center}
+					\includegraphics[width=0.5\linewidth]{NDMTZ}
+				\end{center}
+			\end{enumerate}
+		\end{small}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{¿Qué dificultades presenta este tipo de problemas?}
+		\begin{itemize}
+			\item Al tener que diseñar dos rutas coordinadas, el problema se vuelve combinatorio \textit{de forma cuadrática}.
+			\item Generan una gran cantidad de variables y restricciones con una cantidad de datos relativamente pequeña. Lo que dificulta la búsqueda del óptimo.
+		\end{itemize}
+		\begin{center}
+			\includegraphics[width=0.25\linewidth]{cerebro}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Un algoritmo matheurístico para este tipo de problemas}
+		Al ser problemas \textit{muy} combinatorios, lo que se suele buscar son algoritmos que proporcionen \textit{buenas soluciones en un tiempo razonable}. La idea de nuestro algoritmo es descomponer el problema en dos subproblemas fijando variables.
+		% \begin{block}
+		\begin{footnotesize}
+			\begin{enumerate}
+				\item Buscamos los centroides de los vértices que forman cada grafo. Y generamos un círculo de un radio determinado centrado en dichos centroides.
+				\item Resolvemos el Traveling Salesman Problem with Neighborhoods (TSPN) sobre estos círculos para determinar el orden general de recorrido de los grafos.
+				\item Una vez fijado este orden, buscamos el punto de lanzamiento y recogida de forma recursiva sobre cada grafo para fijar el orden de visita dentro de cada grafo.
+				\item Resolvemos el modelo con todos estos puntos fijados pero dejando libre el orden general de recorrido.
+				\item Vemos si este orden coincide con el anterior. Si no, se repite el Paso 4.
+			\end{enumerate}
+		\end{footnotesize}
+		% \end{block}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Un algoritmo matheurístico para este tipo de problemas}
+			\begin{figure}%
+				\hspace{-2.5cm}
+		    \includegraphics[width=7cm]{step0}\hspace{-1.5cm}\includegraphics[width=7cm]{step1}%
+		    \caption{Ejemplo ilustrativo}%
+		    \label{fig:example}%
+			\end{figure}
+	\end{frame}
+
+	\section{Nuevos horizontes}
+	\begin{frame}
+		\frametitle{Nuevos horizontes}
+		Una vez formulados estos problemas, queremos profundizar en este tema en un siguiente documento que pueda responder a las siguientes preguntas en orden de dificultad:
+		\begin{itemize}
+			\item ¿Qué ocurre si, en vez de disponer solo un dron, tenemos varios drones que podemos lanzar desde un mismo punto y recogerlos a todos en otro punto?
+			\pause
+			\item ¿Qué ocurre si el dron tiene la suficiente capacidad para visitar más de un elemento antes de regresar a la nave nodriza?
+			\pause
+			\item ¿Es posible formular el problema en el caso en el que el movimiento de la nave nodriza y/o el dron presente barreras que no puede atravesar?
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Nuevos horizontes}
+		\begin{center}
+			\includegraphics[width=0.5\linewidth]{continuara}
+		\end{center}
+	\end{frame}
+
+	\begin{frame}
+		\vspace{1.5cm}
+		\hspace{1.5cm}
+		\includegraphics[width=0.7\linewidth]{gracias}
+	\end{frame}
+
+
+
+
+
+
+
+
+\end{document}

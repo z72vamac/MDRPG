@@ -1,0 +1,75 @@
+\section{Strengthening the formulations of \MDR}\label{bounds}
+\noindent
+The different models that we have proposed include in one way or another big-M constants. We have defined different big-M constants along this work. In order to strengthen the formulations we provide tight upper and lower bounds for those constants. In this section we present some results that adjust them for each one of the the models.
+
+\subsubsection*{Big $M$ constants bounding the distance from the launching / rendezvous point on the path followed by the mothership to the rendezvous / launching point on the target graph $g\in \mathcal{G}$}
+\begin{itemize}
+\item \underline{\AMD}. To linearize the first term of the objective function in \AMD, we define the auxiliar non-negative continuous variables $p_L^{e_gt}$ and (resp. $p_R^{e_gt}$) to model the product by including the following constraints:
+\begin{align*}
+p_L^{e_gt} & \geq m_L^{e_g} u^{e_gt}, \\
+p_L^{e_gt} & \leq d_L^{e_g} - M_L^{e_gt}(1-u^{e_gt}).
+\end{align*}
+The best upper bound $M_R^{e_gt}$ or $M_L^{e_gt}$ that we can consider is the full diameter of the data, that is the maximum distance between every pair of vertices of the graphs $g\in \mathcal{G}$, in input the data, i.e., every launching or rendezvous point is inside the circle whose diametrically opposite points are the explained below. 
+$$
+M_R^{e_gt} = \max_{\{v\in V_g, v'\in V_{g'} : g, g'\in\mathcal G\}} \|v - v'\| = M_L^{e_gt}.
+$$
+
+On the other hand, the minimum distance in this case can be zero. This bound is attainable whenever the launching or the rendezvous points of the mothership is the same that the rendezvous or launching point on the target graph $g\in \mathcal{G}$.
+
+\item \underline{\NMD}. In this case, the best upper bounds for $M_R^{e_gt}$ or $M_L^{e_gt}$ is the maximum distance between the polygonal chain $\mathcal{P}$ or the graph $\mathcal{N}$ and any of the target graphs $g\in \mathcal{G}$:
+$$
+M_R^{e_gt} = \max_{\{v\in V_g, w\in \mathcal N\}}\|v - w\| = M_L^{i_gt}.
+$$
+On the other hand, the minimum distance can be computed by taking the closest points between the graph $g$ and the network $\mathcal{N}$:
+$$
+m_R^{e_gt} = \min_{\{v\in V_g, w\in \mathcal N\}}\|v - w\| = m_L^{e_gt}.
+$$
+\end{itemize}
+
+\subsubsection*{Bounds on the big $M$ constants for the distance from the launching point to the rendezvous points for the MTZ/SEC formulations in \AMD}
+
+We can compute a tighter upper bound for the distance $d_{RL}^{gg'}$ between each pair of graphs $g,g'$ for the constraints obtained by the linearization of its product:
+\begin{align*}
+p^{gg'} & \geq m_{RL}^{gg'} d_{RL}^{gg'}, \\
+p^{gg'} & \leq d_{RL}^{gg'} - M_{RL}^{gg'}(1-w^{gg'}).
+\end{align*}
+This upper bound $M_{RL}^{gg'}$ is given by the diameter of $g\cup g'$:
+$$
+M_{RL}^{gg'} = \max_{\{v\in V_g, v'\in V_{g'}\}}\|v - v'\|.
+$$
+
+
+\subsubsection*{Bounds on the big $M$ constants for the distance from the launching to the rendezvous points on the target graph $e\in \mathcal{G}$.} When the drone visits a graph $g$, it has to go from one edge $e_g$ to another edge $e'_g$ depending on the order given by $z^{e_ge_g'}$. This fact produces another product of variables linearized by the following constraints:
+\begin{align*}
+p^{e_ge'_g} & \geq m^{e_ge_g'} d_{RL}^{gg'}, \\
+p^{e_ge_g'} & \leq d^{e_ge_g'} - M^{e_ge_g'}(1-z^{e_ge_g'}).
+\end{align*}
+
+\noindent
+Since we are taking into account the distance between two edges $e=(B^{e_g},C^{e_g}) , e'=(B^{e^\prime_g},C^{e^\prime_g})\in E_g$, the maximum and minimum distances between their vertices give us the upper and lower bounds:
+\begin{align*}
+M^{e_g e^\prime_g} = & \max\{\|B^{e_g} - C^{e^\prime_g}\|, \|B^{e_g} - B^{e^\prime_g}\|, \|C^{e_g} - B^{e^\prime_g}\|, \|C^{e_g} - C^{j_g}\|\}, \\
+m^{e_g e^\prime_g} = & \min\{\|B^{e_g} - C^{e^\prime_g}\|, \|B^{e_g} - B^{e^\prime_g}\|, \|C^{e_g} - B^{e^\prime_g}\|, \|C^{e_g} - C^{e^\prime_g}\|\}.
+\end{align*}
+
+\subsubsection*{Bounds on the big $M$ constants for the distance covered by the mothership on the polygonal for the \PMD \ model during one drone operation.}
+In the case of \PMD, we can also set tighter upper bounds for the distance covered by the drone inside the polygonal during an operation that starts in $e$ and finishes at $e'$ (or vice versa) (see \eqref{pol:dLRt} and \eqref{pol:dRLt}). This is clearly bounded from above by the total length of the line segments where the mothership is located. 
+\begin{equation*}
+M_{LR}^{ee't} = M_{RL}^{ee't} = \left\{\begin{matrix}
+\mathcal L(e), & \text{if } e = e',\\ 
+\displaystyle \sum_{e<e''<e'}\mathcal L(e'') & \text{if } e < e', \\
+\displaystyle \sum_{e'<e''<e}\mathcal L(e'') & \text{if } e > e'.
+\end{matrix}\right.
+\end{equation*}
+
+
+\subsubsection*{Bounds on the big $M$ constants for the distance covered by the drone during an operation for all the models by stages}
+To link the drone operation with the mothership travel in the models by stages, we have defined the constraint $\eqref{DCW-t}$ that includes the $M$:
+\begin{equation*}
+\left(\sum_{e_g\in E_g} u^{e_gt}d_L^{e_gt} + \sum_{e_g, e^\prime_g\in E_g}z^{e_ge^\prime_g}d^{e_ge^\prime_g} + \sum_{e_g\in E_g} \mu^{e_g}d^{e_g} + \sum_{e_g\in E_g} v^{e_gt}d_R^{e_gt}\right)/v_D \leq d_{RL}^t/v_M + M(1 - \sum_{e_g\in E_g} u^{e_gt})
+\end{equation*}
+\noindent
+To obtain this upper bound $M$ we add to the length of the graph $\mathcal L(g)$ the big-Ms computed for $u^{e_gt}$ and $v^{e_gt}$, that is, $M_{L}^{e_gt}$ and $M_R^{e_gt}$, and the maximum distances that can be employed by the drone to move from one edge to another one:
+
+$$M = \mathcal{L}(g) + M_L^{e_gt} + M_R^{e_gt} + \sum_{e_g, e_g'\in E_g}M^{e_ge_g'}.$$
+

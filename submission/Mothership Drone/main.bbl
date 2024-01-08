@@ -1,0 +1,167 @@
+\begin{thebibliography}{}
+
+\bibitem[Amorosi et~al., 2020]{art:Amorosi2020}
+Amorosi, L., Caprari, R., Crainic, T., Dell'Olmo, P., and Ricciardi, N. (2020).
+\newblock {CIRRELT-2020-17 An Integrated Routing-Scheduling Model for a Hybrid
+  UAV-Based Delivery System}.
+\newblock CIRRELT.
+
+\bibitem[Amorosi et~al., 2019]{art:Amorosi2019}
+Amorosi, L., Chiaraviglio, L., and Galan-Jimenez, J. (2019).
+\newblock {Optimal energy management of uav-based cellular networks powered by
+  solar panels and batteries: Formulation and solutions}.
+\newblock {\em IEEE Access}, Vol. 7:53698--53717.
+
+\bibitem[Campbell et~al., 2018]{art:Campbell2018}
+Campbell, J.~F., Corber{\'{a}}n, {\'{A}}., Plana, I., and Sanchis, J.~M.
+  (2018).
+\newblock {Drone arc routing problems}.
+\newblock {\em Networks}, 72(4):543--559.
+
+\bibitem[Campbell et~al., 2017]{art:Campbell2017}
+Campbell, J.~F., Sweeney, D., and Zhang, J. (2017).
+\newblock {Strategic design for delivery with trucks and drones}.
+\newblock {\em Computer Science}.
+
+\bibitem[Carlsson and Song, 2018]{art:Carlsson2018}
+Carlsson, J.~G. and Song, S. (2018).
+\newblock {Coordinated logistics with a truck and a drone}.
+\newblock {\em Management Science}, 64(9):4052--4069.
+
+\bibitem[Chiaraviglio et~al., 2019a]{art:Chiaraviglio2019a}
+Chiaraviglio, L., Amorosi, L., Blefari-Melazzi, N., Dell'olmo, P., {Lo Mastro},
+  A., Natalino, C., and Monti, P. (2019a).
+\newblock {Minimum Cost Design of Cellular Networks in Rural Areas with UAVs,
+  Optical Rings, Solar Panels, and Batteries}.
+\newblock {\em IEEE Transactions on Green Communications and Networking},
+  3(4):901--918.
+
+\bibitem[Chiaraviglio et~al., 2019b]{art:Chiaraviglio2019}
+Chiaraviglio, L., Amorosi, L., Malandrino, F., Chiasserini, C.~F., Dell'Olmo,
+  P., and Casetti, C. (2019b).
+\newblock {Optimal Throughput Management in UAV-based Networks during
+  Disasters}.
+\newblock {\em INFOCOM 2019 - IEEE Conference on Computer Communications
+  Workshops, INFOCOM WKSHPS 2019}, pages 307--312.
+
+\bibitem[Chow, 2016]{art:Chow2016}
+Chow, J.~Y. (2016).
+\newblock {Dynamic UAV-based traffic monitoring under uncertainty as a
+  stochastic arc-inventory routing policy}.
+\newblock {\em International Journal of Transportation Science and Technology},
+  5(3):167--185.
+
+\bibitem[Chung et~al., 2020]{art:Chung2020}
+Chung, S.~H., Sah, B., and Lee, J. (2020).
+\newblock {Optimization for drone and drone-truck combined operations: A review
+  of the state of the art and future directions}.
+\newblock {\em Computers {\&} Operations Research}, 123:105004.
+
+\bibitem[{Di Puglia Pugliese} and Guerriero, 2017]{art:Pugliese2017}
+{Di Puglia Pugliese}, L. and Guerriero, F. (2017).
+\newblock {Last-Mile Deliveries by Using Drones and Classical Vehicles BT -
+  Optimization and Decision Science: Methodologies and Applications}.
+\newblock pages 557--565, Cham. Springer International Publishing.
+
+\bibitem[Dille and Singh, 2013]{art:Dille2013}
+Dille, M. and Singh, S. (2013).
+\newblock {Efficient aerial coverage search in road networks}.
+\newblock {\em AIAA Guidance, Navigation, and Control (GNC) Conference}.
+
+\bibitem[Garone et~al., 2010]{art:Garone2010}
+Garone, E., Naldi, R., Casavola, A., and Frazzoli, E. (2010).
+\newblock {Cooperative mission planning for a class of carrier-vehicle
+  systems}.
+\newblock {\em Proceedings of the IEEE Conference on Decision and Control},
+  pages 1354--1359.
+
+\bibitem[Jimenez et~al., 2018]{Jimenez2018}
+Jimenez, J.~G., Chiaraviglio, L., Amorosi, L., and Blefari-Melazzi, N. (2018).
+\newblock {Multi-Period Mission Planning of UAVs for 5G Coverage in Rural
+  Areas: A Heuristic Approach}.
+\newblock {\em Proceedings of the 2018 9th International Conference on the
+  Network of the Future, NOF 2018}, pages 52--59.
+
+\bibitem[Li et~al., 2018]{art:Li2018}
+Li, M., Zhen, L., Wang, S., Lv, W., and Qu, X. (2018).
+\newblock {Unmanned aerial vehicle scheduling problem for traffic monitoring}.
+\newblock {\em Computers and Industrial Engineering}, 122:15--23.
+
+\bibitem[Mathew et~al., 2015]{art:Mathew2015}
+Mathew, N., Smith, S.~L., and Waslander, S.~L. (2015).
+\newblock {Planning Paths for Package Delivery in Heterogeneous Multirobot
+  Teams}.
+\newblock {\em IEEE Transactions on Automation Science and Engineering},
+  12(4):1298--1308.
+
+\bibitem[Moshref-Javadi and Lee, 2017]{art:Moshref2017}
+Moshref-Javadi, M. and Lee, S. (2017).
+\newblock {Using drones to minimize latency in distribution systems.}
+\newblock In {\em IE Annual Conference, Proceedings}, pages 235--240.
+
+\bibitem[{Mourelo Ferrandez} et~al., 2016]{art:Ferrandez2016}
+{Mourelo Ferrandez}, S., Harbison, T., Weber, T., Sturges, R., and Rich, R.
+  (2016).
+\newblock {Optimization of a truck-drone in tandem delivery network using
+  k-means and genetic algorithm}.
+\newblock {\em Journal of Industrial Engineering and Management; Vol 9, No 2
+  (2016)DO - 10.3926/jiem.1929}.
+
+\bibitem[Oh et~al., 2014]{art:Oh2014}
+Oh, H., Kim, S., Tsourdos, A., and White, B.~A. (2014).
+\newblock {Coordinated road-network search route planning by a team of UAVs}.
+\newblock {\em International Journal of Systems Science}, 45(5):825--840.
+
+\bibitem[Oh et~al., 2011]{art:Oh2011}
+Oh, H., Shin, H.~S., Tsourdos, A., White, B.~A., and Silson, P. (2011).
+\newblock {Coordinated Road Network Search for Multiple UAVs Using Dubins Path
+  BT - Advances in Aerospace Guidance, Navigation and Control}.
+\newblock pages 55--65, Berlin, Heidelberg. Springer Berlin Heidelberg.
+
+\bibitem[Otto et~al., 2018]{art:Otto18}
+Otto, A., Agatz, N., Campbell, J., Golden, B., and Pesch, E. (2018).
+\newblock Optimization approaches for civil applications of unmanned aerial
+  vehicles (uavs) or aerial drones: A survey.
+\newblock {\em Networks}, Vol. 72:1--48.
+
+\bibitem[Poikonen and Campbell, 2020]{art:Poikonen20a}
+Poikonen, S. and Campbell, J. (2020).
+\newblock Future directions in drone routing research.
+\newblock {\em Networks}, pages 1--11.
+
+\bibitem[Poikonen and Golden, 2020]{art:Poikonen2020}
+Poikonen, S. and Golden, B. (2020).
+\newblock {Multi-visit drone routing problem}.
+\newblock {\em Computers and Operations Research}, 113:104802.
+
+\bibitem[Puerto and Valverde, 2020]{art:Puerto2020}
+Puerto, J. and Valverde, C. (2020).
+\newblock {Routing for unmanned aerial vehicles: Touring dimensional sets}.
+\newblock {\em arXiv}.
+
+\bibitem[Tokekar et~al., 2016]{art:Tokekar2016}
+Tokekar, P., Hook, J.~V., Mulla, D., and Isler, V. (2016).
+\newblock {Sensor Planning for a Symbiotic UAV and UGV System for Precision
+  Agriculture}.
+\newblock {\em IEEE Transactions on Robotics}, 32(6):1498--1511.
+
+\bibitem[Trotta et~al., 2018]{art:Trotta2018}
+Trotta, A., Andreagiovanni, F.~D., {Di Felice}, M., Natalizio, E., and
+  Chowdhury, K.~R. (2018).
+\newblock {When UAVs Ride A Bus: Towards Energy-efficient City-scale Video
+  Surveillance}.
+\newblock {\em Proceedings - IEEE INFOCOM}, 2018-April:1043--1051.
+
+\bibitem[Virtanen et~al., 2020]{art:Virtanen2020}
+Virtanen, P., Gommers, R., Oliphant, T.~E., and et~al. (2020).
+\newblock {SciPy 1.0: fundamental algorithms for scientific computing in
+  Python}.
+\newblock {\em Nature Methods}, 17(3):261--272.
+
+\bibitem[Wen et~al., 2016]{art:Wen2016}
+Wen, T., Zhang, Z., and Wong, K. K.~L. (2016).
+\newblock {Multi-objective algorithm for blood supply via unmanned aerial
+  vehicles to the wounded in an emergency situation}.
+\newblock {\em PLoS ONE}, 11(5).
+
+\end{thebibliography}

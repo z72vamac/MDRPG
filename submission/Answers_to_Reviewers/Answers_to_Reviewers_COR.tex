@@ -1,0 +1,263 @@
+\documentclass{article}
+\usepackage[most]{tcolorbox}
+\usepackage[a4paper,top=1in, bottom=1.25in, left=1.25in, right=1.25in]{geometry}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{capt-of}
+\usepackage{graphicx}
+\usepackage{caption,subcaption}
+\usepackage{url}
+\usepackage{multirow}
+%\usepackage{tikz}
+\usepackage{epstopdf}% To incorporate .eps illustrations using PDFLaTeX, etc.
+%\usepackage{subfigure}% Support for small, `sub' figures and tables
+\usepackage{nameref}
+\usepackage{zref-xr,zref-user}
+\zxrsetup{toltxlabel=true, tozreflabel=false}
+%\zexternaldocument*[original:]{TSC}
+\usepackage{xcite}
+\usepackage{hyperref}
+%\externalcitedocument[org:]{TSC}
+
+%\usepackage[table]{xcolor}
+%\usepackage{color}
+%\usepackage{colortbl}
+
+\definecolor{Gray}{gray}{0.9}
+\newcommand{\coldscr}{\cellcolor{Gray}}
+
+\newcommand{\initresponses}{\newcounter{pointcounter}}
+
+\newenvironment{reviewer}{\setcounter{pointcounter}{1}}{}
+
+\newenvironment{mybiblio}{\small}{}
+
+
+%\newcommand{\point}{{\textsl{\thepointcounter}. \stepcounter{pointcounter} #1}}
+
+%\newcommand{\point}[1]{\medskip \noindent \text{{\selectfont \thepointcounter} \stepcounter{pointcounter} #1}}
+
+\newcommand{\point}{\text{{\selectfont \thepointcounter} \stepcounter{pointcounter}}}
+
+
+\newcommand{\mynum}[1]{^{(#1)}}
+\newcommand{\myi}{\mynum{i}}
+\newcommand{\mym}{\mynum{m}}
+\newcommand{\mymi}{\mynum{m,i}}
+\newcommand{\myMi}{\mynum{M,i}}
+\newcommand{\myq}{\mynum{q,i}}
+\newcommand{\myzeroi}{\mynum{0,i}}
+\newcommand{\myduei}{^{(i)\;2}}
+\newcommand{\JP}[1]{{\color{blue}#1}}
+\newcommand{\LA}[1]{{\color{red}#1}}
+
+\begin{comment}
+\usetikzlibrary{shapes.geometric,backgrounds,
+  positioning-plus,node-families,calc}
+\tikzset{
+  basic box/.style = {
+    shape = rectangle,
+    align = center,
+    draw  = #1,
+    fill  = #1!25,
+    rounded corners},
+  header node/.style = {
+    Minimum Width = 0.4cm,
+    font          = \strut\scriptsize\ttfamily,
+    text depth    = +0pt,
+    fill          = white,
+    draw},
+  header/.style = {%
+    inner ysep = +1.5em,
+    append after command = {
+      \pgfextra{\let\TikZlastnode\tikzlastnode}
+      node [header node] (header-\TikZlastnode) at (\TikZlastnode.north) {#1}
+      node [span = (\TikZlastnode)(header-\TikZlastnode)]
+        at (fit bounding box) (h-\TikZlastnode) {}
+    }
+  },
+  hv/.style = {to path = {-|(\tikztotarget)\tikztonodes}},
+  vh/.style = {to path = {|-(\tikztotarget)\tikztonodes}},
+  fat blue line/.style = {ultra thick, blue}
+}
+
+\tikzstyle{dummy} = [rectangle, text width=0.1em, draw=white, white,
+                      minimum width=0.1em, minimum height=3em, opacity=0.0]
+
+\tikzstyle{mycircle} = [circle, draw=black, black, text width=1em, minimum height=1em]
+
+\tikzstyle{mydiamond} = [diamond, aspect=2, draw=gray, fill=gray!25, text width=6em, minimum height=1em]
+
+\tikzstyle{startend} =  [rectangle, font=\strut\scriptsize\ttfamily, text depth=+0pt, fill=white, draw=black]
+\end{comment}
+
+\hyphenation{dif-fe-rent}
+
+\title{Computers and Operations Research CAOR-D-21-00152
+\\
+"Coordinating drones with mothership vehicles: The mothership and drone routing problem with Graphs"}
+\author{Answer to Reviewers' Comments}
+\begin{document}
+\maketitle
+%\begin{abstract}
+%\todo[inline,color=green!50]
+%{Abstract changed to adapt to format indicated in
+%guidelines to authors. Text has beeen changed to
+%reflect the update of Section 2 and Discussion.}
+%\lipsum[1]
+%\end{abstract}
+%\section{Introduction}
+%Really et al. (2010)
+%\todo[color=blue!40]{Added citation}
+%said some important suff.\lipsum[2]
+%\lipsum[3]
+
+We wish to thank the Editors and the Reviewers for their valuable comments and advices which allowed us to further improve the quality of our paper.
+
+We revised the manuscript by taking into account all the suggestions of reviewers 1 and 2. We report below our changes inside the colored textboxes.
+%{\bf We outlined in bold each change made in this new version of the paper}.
+ 
+\initresponses
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% EDITOR COMMENTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=yellow!75!white,colframe=yellow!75!white,borderline={1pt}{0pt}{black},boxrule=0pt]
+\textbf{Editors' Comments}
+
+The reviewers have commented on your above paper. They indicated that it is not acceptable for publication in its present form.
+However, if you feel that you can suitably address the reviewers' comments (included below), I invite you to revise and resubmit your manuscript. You will find your submission record under the menu item, 'Submissions Needing Revision'.
+Please carefully address the issues raised in the comments. 
+
+\end{tcolorbox}
+
+\begin{itshape}
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=yellow!5!white,colframe=yellow!75!white,title=\textbf{Answer E},borderline={1pt}{0pt}{black},boxrule=0pt]
+Thank you for the feedback. We revised the manuscript following the reviewers' advices. 
+We outlined in red each change made in the revised version of the paper.
+\end{tcolorbox}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% REVIEWER 1 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{reviewer}
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!75!black,colframe=red!75!black,borderline={1pt}{0pt}{black},boxrule=0pt]
+\textbf{Reviewer 1}
+\end{tcolorbox}
+
+\begin{itshape}
+While the authors motivate the use of drones (also in combination with a mothership) in general, their problem/model formulation is not motivated by a practical example. It remains unclear to me why they study this problem, and whether it has any practical application.
+\end{itshape}
+\\
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\begin{itshape}
+The problem definition is highly unclear to me. I like the idea to introduce the problem before giving an overview on the literature, as tried in section 2. But then, Section 2 needs to be self-contained. If no technical problem definition is given there yet, then at least a clear intuition on the problem should be provided. But for me, Section 2 has the opposite effect. As a reader, I leave this section more confused than I was before, without knowing which decisions are in scope of the models, what constrains them, and what the objective is.
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\begin{itshape}
+Section 3 starts more technical, but also here the format of variables and input is not always clear. I have struggled with this for a while, and then given up on it.
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\begin{itshape}
+I do think that this paper may have its merits, justifying a publication, but we would first need a clear problem definition, to be able to understand the problem and to appreciate the rest of it.
+I therefore advise to ask the authors to undertake a major revision.
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\begin{itshape}
+Section 2\\
+This problem description did not succeed to give me a clear picture of the problem. I did not understand the motivation (which real-life problem are the authors intending to model?), nor did I properly understand the constraints, which decisions are made by the models (what is variable, what is given?), nor is the objective clear.
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\begin{itshape}
+A few more detailed comments on problems I encountered during reading this section can be found below.
+Page numbers refer to page numbers as displayed in Acrobat reader.\\
+1. p3 ?Moreover we considered..? : why is past tense used here\\
+2. p3 ?... and eg that denotes...? is not a proper (half)sentence.\\
+3. p3: 1.The mothership is not a description variable, rather its position is described using a decision variable. 2. In what way does xtL describe the position of the mothership at time t? Is it a set of coordinates?\\
+4. p3 What do you mean when you say that target locations are ?modeled by graphs?? And then later on this page, that the drone traverses ?the required portion of graph g?? What is the ?total length? of a graph? Is it the sum of edge lengths? Do graph edges even have lengths? (not explicitly specified up to the point where the toal length is introduced) Make sure everything is defined before you use it.\\
+5. p3: What does ?entry and exit points? refer to? Entry and exit to ?a graph?? Or to an edge? How should I understand that? Is the graph embedded in the plane? Are at least the entry and exit points embedded in the plain? What do the tupels that they consist of stand for? Can a drone move in the plain between different points fo the graph? Are these entry and exit points variable or input? $\mu^e_g = 1$ even if eg is visited only partially?\\
+6. What is the intuition/motivating application behind this model?\\
+7. To understand the constraints on page 4, it would extremely help if we knew what the variables and parameters in this constraint stand for, and which of them are actually variables and which are parameters. I must admit that this remained unclear to me. After having made some guess that appeared to be inconsistent with the formulation, I kindly ask the authors to explain this better. I think an illustrative example (in addition to an unambiguous description)would also help here.\\
+8. p4: The ?goal? is unclear to me. What is a ?minimum time path?? Do you measure time from departure at dep to arrival at arr, as often done in the literature, or do you consider ?overall weighted distance?, as stated in the abstract. If so, what are the weights? The speed factors?\\
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=red!5!white,colframe=red!75!black,title=\textbf{Answer R1.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+
+\begin{itshape}
+1. page 6: Are Reg , Leg given?\\
+2. p7: ?we can model the route that follows the drone? $\rightarrow$ ?we can model the route that the drone follows?\\
+3. p7: interior/exterior edges are not defined\\
+4. p7: no description of constraint (5)\\
+5. p7: What is $\mu$?\\
+6. Does the word ?clusterize? exist? Wouldn?t ?cluster? be more common?\\
+\end{itshape}
+
+
+
+\end{reviewer}
+
+\newpage
+\begin{reviewer}
+
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=green!75!black,colframe=yellow!75!black,borderline={1pt}{0pt}{black},boxrule=0pt]
+\textbf{Reviewer 2}
+\end{tcolorbox}
+
+
+\begin{itshape}
+The paper provides a small but relevant contribution to the growing body of "drone-related" literature.
+While a vast number of papers focus on delivery drones, here the drone has to cover the edges of target graphs.
+
+Unfortunately, the motivation for a "visiting percentage" parameter for the target graphs seems to be unclear.
+While it is certainly possible to ignore it by setting it to 100\% the reader remains curious for an applications scenario which remains obscure.
+
+\end{itshape}
+
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=yellow!5!white,colframe=green!75!black,title=\textbf{Answer R2.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+
+\begin{itshape}
+The paper is well written but rather long. This raises the question for potential shortening:
+I would opt to shorten the lengthy and recurring discussion of "MTZ vs. SEC"-formulation and focus on the superior one (based on your experiments).
+Also the Big-M strengthening might be shortened without too much loss.
+On the other hand, the Matheuristic section would benefit from discussing the motivation of your design choices in contrast to potential alternatives in more detail.
+\end{itshape}
+
+\begin{tcolorbox}[breakable,enhanced,coltitle=black,colback=yellow!5!white,colframe=green!75!black,title=\textbf{Answer R2.\point},borderline={1pt}{0pt}{black},boxrule=0pt]
+
+\end{tcolorbox}
+
+\end{reviewer}
+
+
+\end{document}

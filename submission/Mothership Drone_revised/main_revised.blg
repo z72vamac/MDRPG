@@ -1,0 +1,50 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main_revised.aux
+The style file: apalike.bst
+Database file #1: bibliography2.bib
+Warning--empty booktitle in art:Amorosi2020
+Warning--empty booktitle in art:Pugliese2017
+Warning--empty booktitle in art:Oh2011
+You've used 27 entries,
+            1935 wiz_defined-function locations,
+            657 strings with 9719 characters,
+and the built_in function-call counts, 12205 in all, are:
+= -- 1202
+> -- 565
+< -- 15
++ -- 195
+- -- 194
+* -- 1052
+:= -- 2084
+add.period$ -- 83
+call.type$ -- 27
+change.case$ -- 232
+chr.to.int$ -- 26
+cite$ -- 30
+duplicate$ -- 443
+empty$ -- 802
+format.name$ -- 235
+if$ -- 2402
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 27
+newline$ -- 138
+num.names$ -- 81
+pop$ -- 209
+preamble$ -- 1
+purify$ -- 232
+quote$ -- 0
+skip$ -- 350
+stack$ -- 0
+substring$ -- 876
+swap$ -- 81
+text.length$ -- 7
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 162
+warning$ -- 3
+while$ -- 99
+width$ -- 0
+write$ -- 350
+(There were 3 warnings)

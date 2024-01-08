@@ -1,0 +1,190 @@
+\begin{thebibliography}{10}
+
+\bibitem{art:Amorosi2020}
+L.~Amorosi, R.~Caprari, T.~Crainic, P.~Dell'Olmo, and N.~Ricciardi.
+\newblock {CIRRELT-2020-17 An Integrated Routing-Scheduling Model for a Hybrid
+  UAV-Based Delivery System}.
+\newblock CIRRELT, 2020.
+
+\bibitem{Amorosi2018}
+L.~Amorosi, L.~Chiaraviglio, F.~D'Andreagiovanni, and N.~Blefari-Melazzi.
+\newblock {Energy-efficient mission planning of UAVs for 5G coverage in rural
+  zones}.
+\newblock {\em Proceedings of the IEEE International Conference on
+  Environmental Engineering, EE 2018}, 2018.
+
+\bibitem{art:Amorosi2019}
+L~Amorosi, L~Chiaraviglio, and J~Galan-Jimenez.
+\newblock {Optimal energy management of uav-based cellular networks powered by
+  solar panels and batteries: Formulation and solutions}.
+\newblock {\em IEEE Access}, Vol. 7:53698--53717, 2019.
+
+\bibitem{Blanco2017}
+V{\'{\i}}ctor Blanco, Elena Fern{\'{a}}ndez, and Justo Puerto.
+\newblock Minimum spanning trees with neighborhoods: Mathematical programming
+  formulations and solution methods.
+\newblock {\em European Journal of Operational Research}, 262(3):863--878, nov
+  2017.
+
+\bibitem{art:Campbell2018}
+James~F Campbell, {\'{A}}ngel Corber{\'{a}}n, Isaac Plana, and Jos{\'{e}}~M
+  Sanchis.
+\newblock {Drone arc routing problems}.
+\newblock {\em Networks}, 72(4):543--559, oct 2018.
+
+\bibitem{art:Campbell2017}
+James~F Campbell, Don Sweeney, and Juan Zhang.
+\newblock {Strategic design for delivery with trucks and drones}.
+\newblock {\em Computer Science}, 2017.
+
+\bibitem{art:Carlsson2018}
+John~Gunnar Carlsson and Siyuan Song.
+\newblock {Coordinated logistics with a truck and a drone}.
+\newblock {\em Management Science}, 64(9):4052--4069, 2018.
+
+\bibitem{Chiaraviglio2018}
+L.~Chiaraviglio, L.~Amorosi, N.~Blefari-Melazzi, P.~Dell'Olmo, C.~Natalino, and
+  P.~Monti.
+\newblock {Optimal Design of 5G Networks in Rural Zones with UAVs, Optical
+  Rings, Solar Panels and Batteries}.
+\newblock {\em Proceedings of the 20th International Conference on Transparent
+  Optical Networks, ICTON 2018}, 2018.
+
+\bibitem{art:Chiaraviglio2019a}
+Luca Chiaraviglio, Lavinia Amorosi, Nicola Blefari-Melazzi, Paolo Dell'olmo,
+  Antonio {Lo Mastro}, Carlos Natalino, and Paolo Monti.
+\newblock {Minimum Cost Design of Cellular Networks in Rural Areas with UAVs,
+  Optical Rings, Solar Panels, and Batteries}.
+\newblock {\em IEEE Transactions on Green Communications and Networking},
+  3(4):901--918, 2019.
+
+\bibitem{art:Chiaraviglio2019}
+Luca Chiaraviglio, Lavinia Amorosi, Francesco Malandrino, Carla~Fabiana
+  Chiasserini, Paolo Dell'Olmo, and Claudio Casetti.
+\newblock {Optimal Throughput Management in UAV-based Networks during
+  Disasters}.
+\newblock {\em INFOCOM 2019 - IEEE Conference on Computer Communications
+  Workshops, INFOCOM WKSHPS 2019}, pages 307--312, 2019.
+
+\bibitem{art:Chow2016}
+Joseph~Y.J. Chow.
+\newblock {Dynamic UAV-based traffic monitoring under uncertainty as a
+  stochastic arc-inventory routing policy}.
+\newblock {\em International Journal of Transportation Science and Technology},
+  5(3):167--185, 2016.
+
+\bibitem{art:Chung2020}
+Sung~Hoon Chung, Bhawesh Sah, and Jinkun Lee.
+\newblock {Optimization for drone and drone-truck combined operations: A review
+  of the state of the art and future directions}.
+\newblock {\em Computers {\&} Operations Research}, 123:105004, 2020.
+
+\bibitem{art:Pugliese2017}
+Luigi {Di Puglia Pugliese} and Francesca Guerriero.
+\newblock {Last-Mile Deliveries by Using Drones and Classical Vehicles BT -
+  Optimization and Decision Science: Methodologies and Applications}.
+\newblock pages 557--565, Cham, 2017. Springer International Publishing.
+
+\bibitem{art:Dille2013}
+Michael Dille and Sanjiv Singh.
+\newblock {Efficient aerial coverage search in road networks}.
+\newblock {\em AIAA Guidance, Navigation, and Control (GNC) Conference}, 2013.
+
+\bibitem{art:Garone2010}
+Emanuele Garone, Roberto Naldi, Alessandro Casavola, and Emilio Frazzoli.
+\newblock {Cooperative mission planning for a class of carrier-vehicle
+  systems}.
+\newblock {\em Proceedings of the IEEE Conference on Decision and Control},
+  pages 1354--1359, 2010.
+
+\bibitem{Jimenez2018}
+Jaime~Galan Jimenez, Luca Chiaraviglio, Lavinia Amorosi, and Nicola
+  Blefari-Melazzi.
+\newblock {Multi-Period Mission Planning of UAVs for 5G Coverage in Rural
+  Areas: A Heuristic Approach}.
+\newblock {\em Proceedings of the 2018 9th International Conference on the
+  Network of the Future, NOF 2018}, pages 52--59, 2018.
+
+\bibitem{art:Li2018}
+Miao Li, Lu~Zhen, Shuaian Wang, Wenya Lv, and Xiaobo Qu.
+\newblock {Unmanned aerial vehicle scheduling problem for traffic monitoring}.
+\newblock {\em Computers and Industrial Engineering}, 122:15--23, 2018.
+
+\bibitem{art:Mathew2015}
+Neil Mathew, Stephen~L. Smith, and Steven~L. Waslander.
+\newblock {Planning Paths for Package Delivery in Heterogeneous Multirobot
+  Teams}.
+\newblock {\em IEEE Transactions on Automation Science and Engineering},
+  12(4):1298--1308, 2015.
+
+\bibitem{art:Moshref2017}
+M~Moshref-Javadi and S~Lee.
+\newblock {Using drones to minimize latency in distribution systems.}
+\newblock In {\em IE Annual Conference, Proceedings}, pages 235--240, 2017.
+
+\bibitem{art:Ferrandez2016}
+Sergio {Mourelo Ferrandez}, Timothy Harbison, Troy Weber, Robert Sturges, and
+  Robert Rich.
+\newblock {Optimization of a truck-drone in tandem delivery network using
+  k-means and genetic algorithm}.
+\newblock {\em Journal of Industrial Engineering and Management; Vol 9, No 2
+  (2016)DO - 10.3926/jiem.1929}, apr 2016.
+
+\bibitem{art:Oh2014}
+Hyondong Oh, Seungkeun Kim, Antonios Tsourdos, and Brian~A White.
+\newblock {Coordinated road-network search route planning by a team of UAVs}.
+\newblock {\em International Journal of Systems Science}, 45(5):825--840, 2014.
+
+\bibitem{art:Oh2011}
+Hyondong Oh, H~S Shin, A~Tsourdos, B~A White, and P~Silson.
+\newblock {Coordinated Road Network Search for Multiple UAVs Using Dubins Path
+  BT - Advances in Aerospace Guidance, Navigation and Control}.
+\newblock pages 55--65, Berlin, Heidelberg, 2011. Springer Berlin Heidelberg.
+
+\bibitem{art:Otto18}
+A.~Otto, N.~Agatz, J.~Campbell, B.~Golden, and E.~Pesch.
+\newblock Optimization approaches for civil applications of unmanned aerial
+  vehicles (uavs) or aerial drones: A survey.
+\newblock {\em Networks}, Vol. 72:1--48, 2018.
+
+\bibitem{art:Poikonen20a}
+S.~Poikonen and J.F. Campbell.
+\newblock Future directions in drone routing research.
+\newblock {\em Networks}, pages 1--11, 2020.
+
+\bibitem{art:Poikonen2020}
+Stefan Poikonen and Bruce Golden.
+\newblock {Multi-visit drone routing problem}.
+\newblock {\em Computers and Operations Research}, 113:104802, 2020.
+
+\bibitem{art:Puerto2020}
+Justo Puerto and Carlos Valverde.
+\newblock {Routing for unmanned aerial vehicles: Touring dimensional sets}.
+\newblock {\em arXiv}, 2020.
+
+\bibitem{art:Tokekar2016}
+Pratap Tokekar, Joshua~Vander Hook, David Mulla, and Volkan Isler.
+\newblock {Sensor Planning for a Symbiotic UAV and UGV System for Precision
+  Agriculture}.
+\newblock {\em IEEE Transactions on Robotics}, 32(6):1498--1511, 2016.
+
+\bibitem{art:Trotta2018}
+Angelo Trotta, Fabio~D Andreagiovanni, Marco {Di Felice}, Enrico Natalizio, and
+  Kaushik~Roy Chowdhury.
+\newblock {When UAVs Ride A Bus: Towards Energy-efficient City-scale Video
+  Surveillance}.
+\newblock {\em Proceedings - IEEE INFOCOM}, 2018-April:1043--1051, 2018.
+
+\bibitem{art:Virtanen2020}
+Pauli Virtanen, Ralf Gommers, Travis~E Oliphant, and et~al.
+\newblock {SciPy 1.0: fundamental algorithms for scientific computing in
+  Python}.
+\newblock {\em Nature Methods}, 17(3):261--272, 2020.
+
+\bibitem{art:Wen2016}
+Tingxi Wen, Zhongnan Zhang, and Kelvin K~L Wong.
+\newblock {Multi-objective algorithm for blood supply via unmanned aerial
+  vehicles to the wounded in an emergency situation}.
+\newblock {\em PLoS ONE}, 11(5), 2016.
+
+\end{thebibliography}
